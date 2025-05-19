@@ -8,7 +8,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model
-model = joblib.load('../student_model.pkl')
+model = joblib.load('student_model.pkl')
+
 
 @app.route('/')
 def home():
